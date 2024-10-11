@@ -3,10 +3,10 @@
 This repository provides a Python-based solution for migrating Microsoft Fabric reports from Import/Direct Query to DirectLake. The script automates the transition of measures, field parameters, and report rebinding using the `fabric_cat_tools` library.
 
 ## Features
-- Move Field Parameter Tables
-- Move Measures
-- Rebind Reports to new DirectLake semantic models
-- Refresh semantic models
+- Move Field Parameter Tables to DirectLake.
+- Move Measures from source to destination semantic models.
+- Rebind Reports to new DirectLake semantic models.
+- Refresh semantic models after migration.
 
 ## Requirements
 - Python 3.x
@@ -18,9 +18,9 @@ This repository provides a Python-based solution for migrating Microsoft Fabric 
    ```bash
    git clone https://github.com/yourusername/directlake-migration.git
    ```
-2. Install the required libraries:
+2. Navigate to the cloned directory:
    ```bash
-   pip install -r requirements.txt
+   cd directlake-migration
    ```
 3. Install `fabric_cat_tools`:
    ```bash
@@ -30,10 +30,7 @@ This repository provides a Python-based solution for migrating Microsoft Fabric 
 
 1. Edit the migrate_reports.py file to set your source and destination semantic models, tables, and workspaces.
   
-2. Run the script:
-    ```bash
-    python migrate_reports.py
-    ```
+2. Run the script
 
 This will migrate field parameters, measures, and rebind the reports for DirectLake.
 
